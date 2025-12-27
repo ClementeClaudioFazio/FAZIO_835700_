@@ -14,7 +14,6 @@ int main(int argc, char *argv[]) {
     setbuf(stdout, NULL); /* Disable buffering for instant console output */
 
     /* 1. Initialize Winsock for Windows */
-    /* MODIFICA EFFETTUATA QUI SOTTO: _WIN32 */
     #if defined _WIN32
     WSADATA wsa_data;
     if (WSAStartup(MAKEWORD(2, 2), &wsa_data) != 0) {
@@ -161,3 +160,4 @@ void generate_secure(int length, char *buffer) {
     }
     buffer[length] = '\0';
 }
+
