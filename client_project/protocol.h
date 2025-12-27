@@ -7,7 +7,6 @@
 #define PROTOCOL_H
 
 /* Windows specific includes */
-/* MODIFICA EFFETTUATA QUI SOTTO: _WIN32 */
 #if defined _WIN32
 #include <winsock.h>
 #else
@@ -43,3 +42,4 @@ void errorhandler(char *errorMessage) {
 }
 
 #endif
+
