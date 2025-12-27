@@ -7,7 +7,6 @@
 int main(int argc, char *argv[]) {
     setbuf(stdout, NULL); /* Output immediately */
 
-    /* MODIFICA EFFETTUATA QUI SOTTO: _WIN32 */
     #if defined _WIN32
     WSADATA wsa_data;
     if (WSAStartup(MAKEWORD(2, 2), &wsa_data) != 0) {
@@ -87,10 +86,10 @@ int main(int argc, char *argv[]) {
     closesocket(c_socket);
     clearwinsock();
 
-    /* MODIFICA EFFETTUATA QUI SOTTO: _WIN32 */
     #if defined _WIN32
     system("pause");
     #endif
 
     return 0;
 }
+
