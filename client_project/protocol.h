@@ -1,8 +1,3 @@
-/*
- * protocol.h
- * Common header file for Client and Server
- */
-
 #ifndef PROTOCOL_H
 #define PROTOCOL_H
 
@@ -42,4 +37,5 @@ void errorhandler(char *errorMessage) {
 }
 
 #endif
+
 
