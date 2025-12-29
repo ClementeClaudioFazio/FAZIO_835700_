@@ -1,7 +1,3 @@
-/*
- * server main.c
- */
-
 #include "protocol.h"
 
 /* Function Prototypes */
@@ -160,4 +156,5 @@ void generate_secure(int length, char *buffer) {
     }
     buffer[length] = '\0';
 }
+
 
